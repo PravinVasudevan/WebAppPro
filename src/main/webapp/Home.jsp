@@ -7,7 +7,7 @@
 <title>Home Page</title>
 </head>
 <body>
-	<form action="login">
+	<form action="Login.jsp">
 		<input type="submit" value="Sign In">
 	</form>
 </body>

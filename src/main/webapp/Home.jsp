@@ -10,5 +10,9 @@
 	<form action="Login.jsp">
 		<input type="submit" value="Sign In">
 	</form>
+	<form action="SignUp.jsp">
+		<input type="submit" value="Sign Up">
+	</form>
+	
 </body>
 </html>

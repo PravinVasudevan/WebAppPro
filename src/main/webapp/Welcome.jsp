@@ -7,6 +7,6 @@
 <title>Welcome</title>
 </head>
 <body>
-	<a href="Home.jsp">home</a>
+<p><a href="getRecords">JGet Records</a>
 </body>
 </html>

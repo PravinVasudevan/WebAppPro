@@ -11,6 +11,20 @@ public class Credentials {
 	@Id
 	private String uname;
 	private String pass;
+	private String mobileNum;
+	private String email; 
+	public String getMobileNum() {
+		return mobileNum;
+	}
+	public void setMobileNum(String mobileNum) {
+		this.mobileNum = mobileNum;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getUname() {
 		return uname;
 	}
@@ -22,12 +36,5 @@ public class Credentials {
 	}
 	public void setPass(String pass) {
 		this.pass = pass;
-	}
-	public Credentials() {
-		System.out.println("Credentials Bean is created");
-	}
-	@Override
-	public String toString() {
-		return "Credentials [uname=" + uname + ", pass=" + pass + "]";
 	}
 }

@@ -51,6 +51,12 @@
 		    <version>8.0.17</version>
 		</dependency>
 		
+		<dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-binding</artifactId>
+        </dependency>
+		
+		
 	</dependencies>
 
 	<build>

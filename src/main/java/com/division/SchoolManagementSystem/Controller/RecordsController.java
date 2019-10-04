@@ -1,15 +1,21 @@
 package com.division.SchoolManagementSystem.Controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller
+import com.division.SchoolManagementSystem.Beans.StudentsRecords;
+import com.division.SchoolManagementSystem.service.DaoSTDDataAccess;
+
+@RestController
 public class RecordsController {
-	
-	@RequestMapping("getRecords")
-	public ModelAndView fehctRecords() {
-		ModelAndView mv = new ModelAndView();
-		return mv;
+	@Autowired
+	DaoSTDDataAccess std_Fetcher;
+	@GetMapping("getRecords")	
+	public List<StudentsRecords> fehctRecords() {
+		return std_Fetcher.getAllRecords();
 	}
 }

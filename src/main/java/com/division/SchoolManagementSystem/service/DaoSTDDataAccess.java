@@ -15,6 +15,8 @@ public class DaoSTDDataAccess {
 	static DaoConfig config= new DaoConfig();
 	
 	@Autowired
+	StudentsRecords record; 
+	
 	List <StudentsRecords> records;
 	
 	@SuppressWarnings("unchecked")
@@ -24,4 +26,10 @@ public class DaoSTDDataAccess {
 		records = query.list();
 		return records;
 	}	
+	
+	public StudentsRecords getRecord(int id) {
+		record = config.getSession().get(StudentsRecords.class, id);
+		return record;
+	}	
+	
 }
